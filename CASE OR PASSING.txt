@@ -1,0 +1,16 @@
+Q.3 CASE WHEN DEMONSTRATION/PASSING CRITERIA OF STUDENT USING CASE :
+
+DECLARE
+grade char(1);
+BEGIN
+grade:='A';
+CASE grade
+WHEN 'O' THEN dbms_output.put_line('OUTSTANDING');
+WHEN 'A' THEN dbms_output.put_line('EXCELLENT');
+WHEN 'B' THEN dbms_output.put_line('COULD DO BETTER');
+WHEN 'C' THEN dbms_output.put_line('SATISFACTORY');
+WHEN 'P' THEN dbms_output.put_line('Pass');
+ELSE dbms_output.put_line('INVALID OUTPUT');
+END CASE;
+END;
+/

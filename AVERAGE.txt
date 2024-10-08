@@ -1,0 +1,18 @@
+Q.4 AVERAGE IN PL SQL :
+
+DECLARE 
+v_x number(5);
+v_y number(5);
+v_sum number(5);
+v_z number(5);
+v_avg number(5);
+BEGIN
+v_x:=100;
+v_y:=38;
+v_z:=2;
+v_sum:= v_x+v_y;
+v_avg:=v_sum/v_z;
+dbms_output.put_line('SUM IS '||v_sum);
+dbms_output.put_line('AVERAGE IS '||v_avg);
+END;
+/

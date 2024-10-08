@@ -1,0 +1,12 @@
+Q.2 USE OF FOR LOOP IN 5 TABLE:
+
+DECLARE
+ans number (5);
+BEGIN 
+ans:=5;
+FOR num in 10..2 LOOP
+dbms_output.put_line('5x'||num||'='||ans);
+ans:=ans+5;
+END LOOP;
+END;
+/
